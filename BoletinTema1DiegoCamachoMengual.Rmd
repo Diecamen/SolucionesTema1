@@ -40,6 +40,16 @@ b.  Usa las funciones dim, head, tail, str para una primera visión de los conju
 
 c.  Muestra los nombres de las filas y las columnas (rownames, colnames)
 
+    ```{r}
+    colnames(A)
+    rownames(A)
+    ```
+
+    ```{r}
+    colnames(B)
+    rownames(B)
+    ```
+
 d.  Usa la función intersect y almacena en la variable commonAnimals los aminales que aparezcan en ambos conjuntos
 
 e.  Usa setdiff para averiguar qué animales no están en ambos conjuntos. ¿Cuántos son ?. ¿Qué tipo de animales son?
