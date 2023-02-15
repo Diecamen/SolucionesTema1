@@ -115,6 +115,12 @@ b.  Uno de los elementos de la lista es una matriz de caracteres. Muestra por pa
 
 c.  Determina el número de librerías que tienes instaladas.
 
+    ```{r}
+    dim(m_lib)
+
+    #Tengo instaladas 187 librerías
+    ```
+
 <!-- -->
 
 4.  En las transparencias del tema 1 se citan los primeros pasos a seguir cuando se analiza un nuevo conjunto de datos.
