@@ -72,9 +72,8 @@ e.  Usa setdiff para averiguar qué animales no están en ambos conjuntos. ¿Cu�
 
 f.  Determina las diferencia entre los animales que no aparecen en ambos conjuntos.
 
-```{=html}
-<!-- -->
-```
+    -Los animales que aparecen en un solo conjunto son de especies distintas
+
 2.  La funcion qqPlot del paquete car puede ser utilizada para determinar gráficamente si una serie de puntos siguen una distribución de datos Gaussiana. Si las muestras están dentro de las líneas discontinuas podemos indicar que siguen una distribución Gaussiana con un 95 % de confianza. Utilizando esta función representa el logaritmo neperiano (log) del peso del cerebro (brain weigths) del registro de datos mammals del paquete MASS y conjunto de datos Animals2 de la librería robustbase. ¿Presentan el mismo comportamiento ?.¿Podríamos decir que siguen una distribución Gaussiana ?
 
 3.  La función library sin argumentos abre una ventana y muestra las librerías que han sido instaladas.
