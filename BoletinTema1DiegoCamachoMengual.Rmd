@@ -61,6 +61,15 @@ d.  Usa la función intersect y almacena en la variable commonAnimals los aminal
 
 e.  Usa setdiff para averiguar qué animales no están en ambos conjuntos. ¿Cuántos son ?. ¿Qué tipo de animales son?
 
+    ```{r}
+
+    #Comprobar que animales están solo en un df
+
+    setdiff(rownames(A), rownames(B))
+
+    #Son 4 los animales que solo aparecen en un df, son animales exóticos
+    ```
+
 f.  Determina las diferencia entre los animales que no aparecen en ambos conjuntos.
 
 ```{=html}
