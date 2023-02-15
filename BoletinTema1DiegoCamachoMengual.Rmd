@@ -171,6 +171,14 @@ d.  Utiliza la función summary, sobre cabbages y Chile y observa como, además 
 
 5.  Muchas pruebas estadísticas suponen que los datos siguen una distribución Gaussiana. Utiliza la aproximación visual proporcionada por qqPlot para determinar si podemos asumir que las variables HeadWt y VitC del conjunto cabbages verifican esta condición.
 
+    ```{r}
+
+    qqPlot(cabbages$HeadWt)
+    qqPlot(cabbages$VitC)
+
+    #Podemos asumir que ambos cumplen la condición
+    ```
+
 6.  Una representación habitual, para determinar la distribución de los datos de una variable cuantitativa es el histograma (hist). Determina, de forma aproximada, utilizando el histograma, si hay diferencias entre los contenidos de vitamina C (VitC), para las diferentes variedades de calabaza (variable Cult), en el conjunto de datos cabbages.
 
 7.  Un modelo sencillo para relacionar variables es la predicción lineal. En el siguiente ejemplo se utiliza el conjunto de datos whiteside, de la librería MASS. Esta aproximación propone un modelo que predice una variable a partir de otra. Una primera etapa para plantear esta aproximación sería representar ambas variables mediante un diagrama de dispersión (Gráfico XY) y determinar si la relación entre variables "parece" lineal. Si es así, podemos plantear un modelo lineal (en este caso según un factor), donde se aprecia claramente que existe una relación lineal entre las dos variables consideradas. Observa y ejecuta el siguiente código. #Diagrama de dispersión global. plot(whiteside\$Temp, whiteside\$Gas) #Diagrama de dispersión etiquetando según un factor. plot(whiteside\$Temp, whiteside\$Gas, pch=c(6,16)[whiteside\$Insul]) legend(x="topright",legend=c("Insul = Before","Insul = After"), pch=c(6,16)) \# Planteamos 2 modelos lineales, uno para los datos de cada factor Model1 \<- lm(Gas \~ Temp, data = whiteside, subset = which(Insul == "Before")) Model2 \<- lm(Gas \~ Temp, data = whiteside, subset = which(Insul == "After")) \# Representamos las rectas correspondientes a cada modelo lineal abline(Model1, lty=2) abline(Model2)
