@@ -106,6 +106,13 @@ a.  Asigna el valor devuelto por esta función a la variable libReturn y observa
 
 b.  Uno de los elementos de la lista es una matriz de caracteres. Muestra por pantalla los 5 primeros elementos de esta matriz usando la función head.
 
+    ```{r}
+
+    m_lib <- libReturn$results
+    class(m_lib)
+    head(m_lib, 5)
+    ```
+
 c.  Determina el número de librerías que tienes instaladas.
 
 <!-- -->
