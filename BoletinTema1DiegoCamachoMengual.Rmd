@@ -21,6 +21,23 @@ a.  Mira la las características de ambos conjuntos usando la ayuda.
 
 b.  Usa las funciones dim, head, tail, str para una primera visión de los conjuntos de datos.
 
+    ```{r}
+
+    #Primera visión de los conjuntos de datos mediante funciones de R
+
+    dim(A)
+    head(A)
+    tail(A)
+    str(A)
+    ```
+
+    ```{r}
+    dim(B)
+    head(B)
+    tail(B)
+    str(B)
+    ```
+
 c.  Muestra los nombres de las filas y las columnas (rownames, colnames)
 
 d.  Usa la función intersect y almacena en la variable commonAnimals los aminales que aparezcan en ambos conjuntos
