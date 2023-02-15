@@ -182,7 +182,7 @@ d.  Utiliza la función summary, sobre cabbages y Chile y observa como, además 
 6.  Una representación habitual, para determinar la distribución de los datos de una variable cuantitativa es el histograma (hist). Determina, de forma aproximada, utilizando el histograma, si hay diferencias entre los contenidos de vitamina C (VitC), para las diferentes variedades de calabaza (variable Cult), en el conjunto de datos cabbages.
 
     ```{r}
-
+    library(ggplot2)
     ggplot(data=cabbages, aes(x=VitC, fill=Cult))+geom_histogram(alpha=1)
 
     ```
@@ -206,6 +206,17 @@ d.  Utiliza la función summary, sobre cabbages y Chile y observa como, además 
 <!-- -->
 
 a.  Utiliza un procedimiento análogo para determinar si se aprecia una relación lineal entre los niveles de vitamina C, VitC en función del peso de la calabaza, HeadWt, en el conjunto de datos cabbages.
+
+    ```{r}
+    data(cabbages)
+    plot(cabbages$HeadWt, cabbages$VitC, xlab="Peso de la calabaza (g)", ylab="Nivel de Vitamina C")
+
+    model <- lm(VitC ~ HeadWt, data=cabbages)
+
+    abline(model, col="red")
+
+    #Podemos comprobar que no se ajusta muy bien por lo que no habrá una relación lineal fuerte
+    ```
 
 b.  Repite el apartado anterior, pero obteniendo un modelo para cada una de las dos variedades de calabaza, Cult. VerParámetros básicos plot.
 
