@@ -2,7 +2,9 @@
 title: "BoletinTema1DiegoCamachoMengual"
 author: "Diego Camacho Mengual"
 date: "2023-02-15"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 1.  Considera los conjuntos de datos mammals del paquete MASS y Animals2 del paquete robustbase.
@@ -208,7 +210,7 @@ d.  Utiliza la función summary, sobre cabbages y Chile y observa como, además 
 a.  Utiliza un procedimiento análogo para determinar si se aprecia una relación lineal entre los niveles de vitamina C, VitC en función del peso de la calabaza, HeadWt, en el conjunto de datos cabbages.
 
     ```{r}
-    data(cabbages)
+
     plot(cabbages$HeadWt, cabbages$VitC, xlab="Peso de la calabaza (g)", ylab="Nivel de Vitamina C")
 
     model <- lm(VitC ~ HeadWt, data=cabbages)
@@ -219,5 +221,9 @@ a.  Utiliza un procedimiento análogo para determinar si se aprecia una relació
     ```
 
 b.  Repite el apartado anterior, pero obteniendo un modelo para cada una de las dos variedades de calabaza, Cult. VerParámetros básicos plot.
+
+    ```{r}
+
+    ```
 
 c.  Usa summary con cada uno de los modelos obtenidos y observa Coefficients. Dado que hemos planteado un modelo y = mx+n, donde y = V itC y x = HeadW t. La función lm nos permite obtener (Intercept); n y la pendiente HeadWt; m (además de otros parámetros adicionales que evalúan la caracterísiticas del modelo). Observa que en todos los casos, la pendiene es negativa indicando que las calabazas de más peso contienen menos vitamina C. No te preocupes por el resto de parámetros del modelo, por el momento
